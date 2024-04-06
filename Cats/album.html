@@ -1,0 +1,142 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Photo Album</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <style>
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.album {
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 40px;
+    padding: 20px;
+    border: 2px solid rgb(185, 88, 88);
+}
+
+.photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.photo img {
+    width:400px;
+    height: 300px;
+    display: block;
+}
+
+.photo p {
+    margin: 10px;
+    font-family: cursive;
+    color: rgba(169, 55, 72, 0.595);
+}
+#head h1{
+    text-align: center;
+    font-family: cursive;
+    color: rgba(169, 55, 72, 0.516);
+
+    
+}
+
+p{
+    font-weight: bold;
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="cat logo.png" alt="page logo" w>
+            <h1>Cat Paradaise</h1>
+        </div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <img src="paw1.png" alt="" width="30px" >
+            </div>
+            <nav class="navigation-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="album.html">Album</a></li>
+                </ul>
+            </nav>
+        </header>
+    <span id="head">
+    <h1 >
+        Gallery
+    </h1>
+</span>
+    <div class="album">
+        <div class="photo">
+            <img src="cat-15.jpg" alt="Photo 10">
+            <p>Friendship😊</p>
+
+        </div>
+        <div class="photo">
+            <img src="cat-11.jpg" alt="Photo 2">
+            <p>Stylish 😎😍</p>
+        </div>
+        <div class="photo">
+            <img src="cat-13.jpg" alt="Photo 10">
+            <p>Crazy🤪</p>
+        </div>
+        <div class="photo">
+            <img src="cat-6.jpg" alt="Photo 1">
+            <p>Cute😊😁</p>
+        </div>
+        
+        <div class="photo">
+            <img src="cat-2.jpg" alt="Photo 1">
+            <p>Elegant😇 </p>
+        </div>
+        <div class="photo">
+            <img src="cat-14.jpg" alt="Photo 10">
+            <p>Champion🏆</p>
+
+        </div>
+        <div class="photo">
+            <img src="cat-4.jpg" alt="Photo 1">
+            <p>Laudable✨</p>
+        </div>
+        <div class="photo">
+            <img src="cat-5.jpg" alt="Photo 1">
+            <p>Kind🥰</p>
+        </div>
+        <div class="photo">
+            <img src="cat-10.jpg" alt="Photo 1">
+            <p>Lovely❤</p>
+        </div>
+        <div class="photo">
+            <img src="cat-3.jpg" alt="Photo 1">
+            <p>Super⚡</p>
+        </div>
+       
+        <div class="photo">
+            <img src="cat-12.jpg" alt="Photo 10">
+            <p>Friends🙃</p>
+        </div>
+        <div class="photo">
+            <img src="cat-16.jpg" alt="Photo 10">
+            <p>Class 📚</p>
+
+        </div>
+       
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>

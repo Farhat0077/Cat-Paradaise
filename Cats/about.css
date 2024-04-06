@@ -1,0 +1,259 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+   
+}
+header{
+  
+    width: auto;
+    height: 90px;   
+}
+.photo1{
+    height: 500px;
+}
+ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    margin: 0;
+    padding: 25px;
+    gap: 10px;
+}
+
+li {
+    cursor: pointer;
+}
+
+.align-right{
+    margin-left: auto;
+   
+}
+.main-post{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+
+@media(max-width:750px){
+    .main-post{
+        position: relative;
+        margin: 0;
+       
+
+    }
+    .p{
+        position: absolute;
+        bottom: 50px;
+        color: rgb(211, 200, 200);
+        margin:0  20px;
+        line-height: 25px;
+       
+    }
+    .h{
+        position: absolute;
+        bottom: 130px;
+        color: white;
+        margin: 0.7em 20px;
+        font-size: 2rem;
+
+    }
+    .date{
+        position: absolute;
+        bottom: 200px;
+        color: #9f9a9a;
+        margin: 1.5em 20px;
+    }
+
+    header{
+  
+        width: auto;
+        height: 100px;   
+    }
+    .photo1{
+        height: 400px;
+    }
+    ul {
+        display: flex;
+        list-style-type: none;
+        align-items: center;
+        margin: 0;
+        padding: 20px;
+        gap: 3px;
+    }
+ 
+}
+
+
+@media(min-width:750px){
+    .main-post{
+        position: relative;
+       
+
+    }
+    .p{
+        position: absolute;
+        bottom: 20%;
+        transform: translate(1% ,15%);
+        color: rgb(231, 215, 215);
+        margin: 0 20px;
+        line-height: 25px;
+        margin-right: 40%;
+        
+
+
+    }
+    .h{
+        position: absolute;
+        transform: translate(1% ,40%);
+        bottom: 160px;
+        color: white;
+        margin: 0 20px;
+        font-size: 2rem;
+
+    }
+    .date{
+        position: absolute;
+        transform: translate(1% ,1%);
+        bottom: 170px;
+        color: #d1d1d1;
+        margin: 2em 30px;
+    }
+ 
+
+
+
+}
+    .container {
+        padding-top: 1.5em;  
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr))
+    }
+    
+    .posts { 
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr))
+    }
+    .container , .posts{
+        display: grid;
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+        gap: 2em;
+
+    }
+    article {
+        margin-bottom: 1em;
+    }
+    
+    img {
+        width: 100%;
+    }
+    
+    .article-info {
+        text-transform: uppercase;
+    }
+    
+    .article-img {
+        margin-bottom: 1em;
+    }
+    
+    .article-title {
+        font-size: 1.5rem;
+        margin: 0.5em 0 0.35em 0;
+    }
+    
+    .article-preview {
+        margin-top: 0;
+    }
+    
+    p {
+        line-height: 1.3;
+    }
+    
+ .recent-post-heading {
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 0;
+  }
+  @media (min-width: 550px) {
+    .about-me {
+      display: flex;
+      align-items: center;
+      gap: 3.3rem;
+    }
+    .about-me h1 {
+      max-width: 76rem;
+      font-size: 3.6rem;
+      margin-top: 200px;
+    }
+    .about-me p {
+      font-size: 1.6rem;
+      max-width: 76rem;
+      color: #151515;
+    }
+  }
+  .img1{
+      border-radius: 100%;
+      width: 300px;
+  }
+  a{
+    
+    text-decoration: none;
+    color: black;
+  }
+
+  a:active{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+  }
+.text{
+   margin: 10px 30px;
+}
+.recent-posts{
+    margin: 0 150px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.space{
+    margin: 50px 20px;
+}
+@media(max-width:750px){
+    .recent-posts{
+        margin: 0 20px;
+    }
+    .pp{
+        margin: 5px 10px;
+     }
+
+     
+}
+.footer{
+      
+    font-family: sans-serif;
+    padding-top: 2em;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    text-transform: capitalize;
+    text-align: center;
+    width: 100%;
+    height: 70px;
+    margin-bottom: 0;
+}
+.footer span{
+margin-top: 20px;
+color: rgb(189, 189, 189);
+font-weight: 100;
+font-size: small;
+
+
+}
+.more{
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    font-weight: bolder;
+}
+.head-text{
+    font-size: 20px;
+    font-weight:bold ;
+}
